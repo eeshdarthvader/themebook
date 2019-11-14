@@ -1,14 +1,12 @@
-name: CI
+name: Bundle Size
 
-on: [push]
+on: pull_request
 
 jobs:
-  build:
-
+  size-check:
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v1
     - name: GitHub Action for JS Bundle Size
-      uses: mikeal/bundle-size-action@1.0.0
+      uses: actions/bundlesize@v0.18.0
 
