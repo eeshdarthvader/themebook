@@ -28,7 +28,7 @@ const NavContainer = styled.nav`
 		}
 
 		li a:hover {
-			color: ${({ theme }) => theme.colors.primary}
+			color: ${({ theme }) => theme.PRIMARY.LIGHT}
 		}
   `
 
