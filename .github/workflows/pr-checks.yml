@@ -1,0 +1,19 @@
+name: PR checks
+
+on: pull_request
+
+jobs:
+  eslint:
+    runs-on: ubuntu-18.04
+    steps:
+      - uses: actions/checkout@v1
+        with:
+          fetch-depth: 1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - name: npm install
+        run: npm install
+      - name: 'ESLint'
+        run: yarn eslint
+  
