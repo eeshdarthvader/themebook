@@ -27,9 +27,7 @@ const NavContainer = styled.nav`
 			text-decoration: none;
 		}
 
-		li a:hover {
-			color: ${({ theme }) => theme.PRIMARY.LIGHT}
-		}
+
   `
 
 
