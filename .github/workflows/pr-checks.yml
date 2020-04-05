@@ -17,31 +17,4 @@ jobs:
             HUSKY_SKIP_INSTALL: true
       - name: 'ESLint'
         run: yarn eslint
-  typecheck:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - uses: bahmutov/npm-install@v1
-        env:
-            HUSKY_SKIP_INSTALL: true
-      - name: 'Type check'
-        run: yarn typecheck
-  tests:
-    runs-on: ubuntu-18.04
-    steps:
-      - uses: actions/checkout@v1
-        with:
-          fetch-depth: 1
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 12
-      - uses: bahmutov/npm-install@v1
-        env:
-            HUSKY_SKIP_INSTALL: true
-      - name: 'Tests'
-        run: yarn test
+  
