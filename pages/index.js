@@ -1,5 +1,8 @@
-import React from 'react'
-import Summary from '../components/summary'
+import React from 'react';
+import Summary from '../components/summary';
 
-
-export default () => <div><Summary/></div>
+export default () => (
+    <div>
+        <Summary />
+    </div>
+);
