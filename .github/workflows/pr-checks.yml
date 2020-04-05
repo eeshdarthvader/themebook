@@ -12,9 +12,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - uses: bahmutov/npm-install@v1
-        env:
-            HUSKY_SKIP_INSTALL: true
+      - name: npm install
+        run: npm install
       - name: 'ESLint'
         run: yarn eslint
   
