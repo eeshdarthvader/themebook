@@ -1,13 +1,12 @@
-import colorTokens from './tokens/colors'
-import fontTokens from './tokens/fonts'
+import colorTokens from './tokens/colors';
+import fontTokens from './tokens/fonts';
 
 export const THEME = {
-  color:{
-    ...colorTokens
-  },
-  
-  font: {
-    ...fontTokens
-  }
-}
+    color: {
+        ...colorTokens
+    },
 
+    font: {
+        ...fontTokens
+    }
+};
