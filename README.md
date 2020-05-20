@@ -1,18 +1,15 @@
-# Portfolio
-Build something stupid
+# ThemeUI
+
+Personal Component Library and Design System
 
 ## How to use
 
 Install it and run:
 
 ```bash
-npm install
-npm run dev
-# or
 yarn
 yarn dev
 ```
-
 
 ## Using styled-component
 
