@@ -1,14 +1,16 @@
+[![Actions Status](https://github.com/eeshdarthvader/themebook/workflows/PR%20checks/badge.svg)](https://github.com/eeshdarthvader/themebook/workflows/PR%20checks/badge.svg)
+
 # ThemeBook
 
 Personal Component Library and Design System
 
 ## How to use
 
-Install it and run:
+Install it and run it in storybook:
 
 ```bash
 yarn
-yarn dev
+yarn storybook
 ```
 
 ## Using styled-component
