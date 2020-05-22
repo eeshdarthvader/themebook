@@ -1,13 +1,13 @@
 {
     "name": "themebook",
-    "version": "0.0.17",
+    "version": "0.1.1",
     "private": false,
     "scripts": {
         "lint": "eslint ./",
         "storybook": "start-storybook -p 6006",
         "storybook-build": "build-storybook -c .storybook -o storybook",
         "transpile": "babel src/components  --extensions '.js' --out-dir packages --ignore 'src/**/*.stories.jsx','**/*.test.js' --copy-files --no-copy-ignored",
-        "prepublishOnly": "rm -rf packages && yarn transpile",
+        "prepublishOnly": "yarn build:components",
         "build:components": "rollup -c"
     },
     "peerDependencies": {
