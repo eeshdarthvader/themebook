@@ -13,6 +13,6 @@ const components = fs
 // generate package.json
 const packageJsonPath = path.resolve(process.cwd(), 'package.json');
 const packageJson = JSON.parse(fs.readFileSync(packageJsonPath, 'utf-8'));
-const newPackageJson = { ...packageJson, files: ['cjs/**/*', ...components, 'theme.js'] };
+const newPackageJson = { ...packageJson, files: [...components, 'packages/**/*'] };
 fs.writeFileSync(packageJsonPath, JSON.stringify(newPackageJson, null, 2));
 console.log('publish files created in package.json');

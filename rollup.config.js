@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import babel from 'rollup-plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
-import external from 'rollup-plugin-peer-deps-external';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import resolve from 'rollup-plugin-node-resolve';
 import svg from 'rollup-plugin-svg';
 
@@ -19,7 +19,7 @@ const config = fs
     .map(component => ({
         input: `${component}/index.js`,
         plugins: [
-            external(),
+            peerDepsExternal(),
             svg({
                 base64: true
             }),
@@ -34,12 +34,11 @@ const config = fs
         output: [
             {
                 file: `packages/${component.split('/').pop()}.js`,
-                format: 'esm'
+                format: 'cjs'
             },
             {
-                file: `packages/cjs/${component.split('/').pop()}.js`,
-                format: 'cjs',
-                exports: 'named'
+                file: `packages/es/${component.split('/').pop()}.js`,
+                format: 'esm'
             }
         ]
     }));
