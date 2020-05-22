@@ -1,6 +1,6 @@
 {
     "name": "themebook",
-    "version": "0.1.7",
+    "version": "0.1.8",
     "description": "Responsive and accessible React UI components for starters",
     "private": false,
     "scripts": {

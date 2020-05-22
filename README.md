@@ -59,3 +59,28 @@ and if you want to use the `ES` version you can import it like this
 ```js
 import Button from 'themebook/es/Button';
 ```
+
+## Contributing
+
+We are always open and invite developers to contribute to ThemeBook. We have kept the guidelines and process dead simple, so you invest more time in making components accessible to all.
+
+Micromodal follows the [standardjs](https://standardjs.com/) coding standard.
+
+#### Development setup
+
+1. Clone Github repo `$ git clone https://github.com/ghosh/micromodal.git`
+2. Install `yarn` package manager (Read [installation guide](https://yarnpkg.com/en/docs/install#mac-tab))
+3. Run `yarn install` in the root folder to install all dependencies
+4. Run `yarn storybook` to start a dev server for storybook.
+5. Make the component in `src/component` folder with a storybook file.
+6. Send us pull request and chill
+
+&nbsp;
+
+## Licensing
+
+This project is licensed under [MIT license](https://opensource.org/licenses/MIT).
+
+## Created and maintained by
+
+Eesh Tyagi - [@EtEesh](https://twitter.com/EtEesh) 🇩🇪
