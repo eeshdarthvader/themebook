@@ -68,7 +68,7 @@ Micromodal follows the [standardjs](https://standardjs.com/) coding standard.
 
 #### Development setup
 
-1. Clone Github repo `$ git clone https://github.com/ghosh/micromodal.git`
+1. Clone Github repo `$ git clone https://github.com/eeshdarthvader/themebook`
 2. Install `yarn` package manager (Read [installation guide](https://yarnpkg.com/en/docs/install#mac-tab))
 3. Run `yarn install` in the root folder to install all dependencies
 4. Run `yarn storybook` to start a dev server for storybook.
