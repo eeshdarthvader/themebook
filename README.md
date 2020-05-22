@@ -2,7 +2,9 @@
 
 # ThemeBook
 
-A Tiny Component Library and Design System for Starters
+A Tiny Component Library and Design System Starter.
+
+It has basic extendible components and basic plumbing using rollup with publish process.
 
 ## Setup
 
