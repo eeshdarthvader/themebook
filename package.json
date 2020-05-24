@@ -1,6 +1,6 @@
 {
     "name": "themebook",
-    "version": "0.1.9",
+    "version": "0.2.0",
     "description": "Responsive and accessible React UI components for starters",
     "private": false,
     "scripts": {
@@ -16,13 +16,13 @@
     "dependencies": {
         "react": "16.13.1",
         "react-dom": "16.13.1",
-        "styled-components": "5.1.0",
         "rollup": "^2.10.7",
         "rollup-plugin-babel": "^4.4.0",
         "rollup-plugin-commonjs": "^10.1.0",
         "rollup-plugin-node-resolve": "^5.2.0",
         "rollup-plugin-peer-deps-external": "^2.2.2",
-        "rollup-plugin-svg": "^2.0.0"
+        "rollup-plugin-svg": "^2.0.0",
+        "styled-components": "5.1.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.8.4",
@@ -53,7 +53,8 @@
         "lint-staged": ">=10.2.6",
         "path": "^0.12.7",
         "prettier": "^2.0.2",
-        "prettierrc": "^0.0.0-5"
+        "prettierrc": "^0.0.0-5",
+        "prop-types": "^15.7.2"
     },
     "husky": {
         "hooks": {

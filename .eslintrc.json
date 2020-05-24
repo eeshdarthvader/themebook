@@ -2,6 +2,7 @@
     "extends": ["airbnb", "prettier", "prettier/react"],
     "parser": "babel-eslint",
     "rules": {
+        "react/jsx-props-no-spreading": "off",
         "import/no-unresolved": "off",
         "prettier/prettier": [
             "error",
@@ -11,12 +12,7 @@
                 "printWidth": 100
             }
         ],
-        "import/no-extraneous-dependencies": [
-            "error",
-            {
-                "devDependencies": ["**/*.test.js", "jest*.js", "**/*.stories.js"]
-            }
-        ],
+        "import/no-extraneous-dependencies": "off",
         "react/prop-types": "off",
         "react/default-props-match-prop-types": "off",
         "react/no-did-mount-set-state": "off",
