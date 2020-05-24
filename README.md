@@ -51,13 +51,45 @@ We build the JSX into transpiled version inside `packages`.
 Bundling is upto the consumer application.
 
 ```js
-import Button from 'themebook/Button';
+import Button from 'themebook/packages/Button';
 ```
 
 and if you want to use the `ES` version you can import it like this
 
 ```js
-import Button from 'themebook/es/Button';
+import Button from 'themebook/packages/es/Button';
+```
+
+## Theming
+
+Theme file is defined in
+
+```
+src\theme\theme.js
+```
+
+You can use `useTheme` hook or `withTheme` HOC to get theme prop in your project.
+
+To override this basic theme, just provide your own theme object and pass it down to `ThemeProvider`
+
+#### Example
+
+```js
+// index.js
+import React from 'react';
+import ReactDOM from 'react-dom';
+import { ThemeProvider } from 'styled-components';
+import App from './App';
+
+const Root = () => (
+    <ThemeProvider theme={{ ...yourOwntheme }}>
+        <React.Fragment>
+            <App />
+        </React.Fragment>
+    </ThemeProvider>
+);
+
+ReactDOM.render(<Root />, document.getElementById('root'));
 ```
 
 ## Contributing
