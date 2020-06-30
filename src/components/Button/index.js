@@ -18,7 +18,7 @@ export const BUTTON_TYPE = Object.freeze({
     SECONDARY: 'secondary'
 });
 
-const ButtonComponent = ({ onClick, type, children, disabled, ...props }) => {
+export const ButtonComponent = ({ onClick, type, children, disabled, ...props }) => {
     switch (type) {
         case BUTTON_TYPE.PRIMARY:
             return (

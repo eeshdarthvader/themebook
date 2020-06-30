@@ -1,5 +1,5 @@
 import React from 'react';
-import ButtonComponent, { BUTTON_TYPE } from './index';
+import Button, { ButtonComponent, BUTTON_TYPE } from './index';
 
 export default {
     component: ButtonComponent,
@@ -7,42 +7,42 @@ export default {
 };
 
 export const Primary = () => {
-    return <ButtonComponent type={BUTTON_TYPE.PRIMARY}>Primary</ButtonComponent>;
+    return <Button type={BUTTON_TYPE.PRIMARY}>Primary</Button>;
 };
 
 export const Secondary = () => {
-    return <ButtonComponent type={BUTTON_TYPE.SECONDARY}>Secondary</ButtonComponent>;
+    return <Button type={BUTTON_TYPE.SECONDARY}>Secondary</Button>;
 };
 
 export const OutlinedPrimary = () => {
     return (
-        <ButtonComponent type={BUTTON_TYPE.PRIMARY} variant="outlined">
+        <Button type={BUTTON_TYPE.PRIMARY} variant="outlined">
             Outlined Primary
-        </ButtonComponent>
+        </Button>
     );
 };
 
 export const OutlinedSecondary = () => {
     return (
-        <ButtonComponent type={BUTTON_TYPE.SECONDARY} variant="outlined">
+        <Button type={BUTTON_TYPE.SECONDARY} variant="outlined">
             Outlined Secondary
-        </ButtonComponent>
+        </Button>
     );
 };
 
 export const Disabled = () => {
     return (
-        <ButtonComponent disabled type={BUTTON_TYPE.PRIMARY}>
+        <Button disabled type={BUTTON_TYPE.PRIMARY}>
             Disabled
-        </ButtonComponent>
+        </Button>
     );
 };
 
 export const Big = () => {
     return (
-        <ButtonComponent big type={BUTTON_TYPE.PRIMARY}>
+        <Button big type={BUTTON_TYPE.PRIMARY}>
             Big Button
-        </ButtonComponent>
+        </Button>
     );
 };
 
