@@ -6,7 +6,8 @@ module.exports = {
         '@storybook/addon-links/register',
         '@storybook/addon-viewport/register',
         '@storybook/addon-a11y/register',
-        '@storybook/addon-backgrounds/register'
+        '@storybook/addon-backgrounds/register',
+        '@storybook/addon-docs'
     ],
     webpackFinal: config => {
         // `mode` has a value of 'DEVELOPMENT' or 'PRODUCTION'

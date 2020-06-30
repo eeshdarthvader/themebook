@@ -26,7 +26,7 @@ const colors = {
         contrastText: '#fff'
     },
     text: {
-        primary: 'rgba(0, 0, 0, 1)',
+        primary: 'rgb(90, 90, 90)',
         secondary: 'rgba(0, 0, 0, 0.7)',
         disabled: 'rgba(0, 0, 0, 0.38)',
         hint: 'rgba(0, 0, 0, 0.38)'
