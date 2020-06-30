@@ -4,7 +4,7 @@
 
 A Tiny Component Library and Design System Starter.
 
-[Storybook](https://themebook-storybook.vercel.app/)
+[Storybook](https://themebook-storybook.vercel.app/?path=/docs/button--primary)
 
 It has basic extendible components and basic plumbing using rollup with publish process.
 
